@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a1a;color:#fff;overflow:hidden;height:100vh;font-family:'Poppins',sans-serif;touch-action:none}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(900px 600px at 20% 20%, #8b002a 0%, #5a0015 25%, #001a4d 70%, #000a2a 100%)}
+.slide{width:100vw;height:100vh;display:none;padding:0 70px 110px 12%;flex-direction:column;overflow-y:auto}
+.slide.active{display:flex}
+.header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg, #0a0a1a 0%, #0a0a1a 75%, transparent 100%);padding:28px 0 14px 0}
+.tag{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#aaccff;padding:7px 18px;border-radius:20px;font-size:.75rem;letter-spacing:2px;margin-bottom:10px;width:fit-content;display:inline-block}
+h1{font-size:3.3rem;font-weight:800;line-height:1} h1 span{background:linear-gradient(90deg,#ff2a5a,#4d8aff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:2.5rem} h2 span{color:#6aa8ff}
+.typewrite{font-size:1.18rem;line-height:2.1;color:#dde6ff;max-width:900px;white-space:pre-line;background:rgba(255,255,255,.06);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.12);padding:26px;border-radius:18px;margin-top:18px}
+.thank-page{justify-content:center;align-items:center;text-align:center;padding-bottom:110px !important}
+.thank-title{font-size:3.2rem;font-weight:800;background:linear-gradient(90deg,#ff2a5a,#4d8aff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.bottom-nav{position:fixed;bottom:20px;left:0;right:0;display:flex;justify-content:space-between;padding:0 18px;z-index:100}
+.arrow-bottom{width:54px;height:54px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;cursor:pointer}
+.scroll-track{position:fixed;right:24px;top:85px;bottom:110px;width:4px;background:rgba(255,255,255,.18);border-radius:10px;z-index:100}
+.scroll-thumb{position:absolute;left:50%;transform:translateX(-50%);width:30px;height:30px;background:linear-gradient(135deg,#ff2a5a,#4d8aff);border-radius:50%;border:3px solid #fff;box-shadow:0 0 15px rgba(255,42,90,.6);cursor:grab;touch-action:none;top:0}
+.progress{position:fixed;top:0;left:0;height:5px;background:linear-gradient(90deg,#ff2a5a,#4d8aff);z-index:99}
+.dots{position:fixed;bottom:32px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:99} .dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.25)} .dot.active{background:linear-gradient(90deg,#ff2a5a,#4d8aff);width:30px;border-radius:10px}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="progress" id="bar"></div>
+<div class="bottom-nav"><div class="arrow-bottom" onclick="prev()">‹</div><div class="arrow-bottom" onclick="next()">›</div></div>
+<div class="scroll-track" id="track"><div class="scroll-thumb" id="thumb"></div></div>
+<div class="dots" id="dots"></div>
+
+<div class="slide active" data-text="Social media is a group of online apps like Instagram, TikTok, and YouTube that allow people to create and share information with the world.
+
+The word Social means interaction between people, and Media means the channel of communication.
+
+The most famous platforms today are Instagram for photos, TikTok for short videos, and YouTube for education and long videos.
+
+In 2026, more than 5 billion people use social media, which is more than 60% of the world population.
+
+It is not just an app anymore, it has become a lifestyle, a job, and a source of income for many young people.">
+<div class="header"><div class="tag">PAGE 01 / DEFINITION</div><h1>What is <span>Social Media?</span></h1></div><div class="typewrite"></div></div>
+
+<div class="slide" data-text="Social media has many benefits if we use it in the right way and it brings a lot of positive points to our life.
+
+It helps us with global communication to talk to family abroad, and it is a huge free school where we can learn English and many skills for free.
+
+It is also very useful for business because small shops can sell products on Instagram and reach thousands of customers with free marketing.
+
+It created many new jobs like Content Creator and Video Editor, so young people can now earn money from their phone and creativity.
+
+Finally, it gives us fast news, freedom to share our talent, and entertainment that helps us relax after study.">
+<div class="header"><div class="tag">PAGE 02 / ADVANTAGES</div><h2>Advantages of <span>Social Media</span></h2></div><div class="typewrite"></div></div>
+
+<div class="slide" data-text="However, social media also has a very dark side that can destroy our life if we use it too much.
+
+It causes strong addiction and we lose precious time, and it badly affects our mental health when we compare our life with fake perfect lives.
+
+Another serious problem is fake news and misinformation, especially with Artificial Intelligence in 2026 it is hard to know what is true.
+
+We also lose our privacy completely, and many young people suffer from cyberbullying and hate comments that cause psychological damage.
+
+Finally, it causes sleep problems from blue light, makes our real relationships very weak, and there are many scams that steal money online.">
+<div class="header"><div class="tag">PAGE 03 / DISADVANTAGES</div><h2>Disadvantages of <span>Social Media</span></h2></div><div class="typewrite"></div></div>
+
+<div class="slide" data-text="In conclusion, social media is like a double-edged sword with amazing advantages and also serious disadvantages.
+
+The solution is not to delete it, because we need it for study and work in our modern life.
+
+The real solution is to control our use and learn to USE IT, NOT LET IT USE US.
+
+We must set time limits, follow only useful accounts, create more than we consume, and remember that real life is more important than likes.
+
+Thank you for listening, I am ready for your questions.">
+<div class="header"><div class="tag">PAGE 04 / CONCLUSION</div><h1>My <span>Conclusion</span></h1></div><div class="typewrite"></div></div>
+
+<div class="slide thank-page" data-text="Thanks for listening">
+<div class="thank-title typewrite"></div>
+</div>
+
+<script>
+let cur=0;
+const slides=document.querySelectorAll('.slide');
+const bar=document.getElementById('bar');
+const dotsC=document.getElementById('dots');
+const track=document.getElementById('track');
+const thumb=document.getElementById('thumb');
+slides.forEach((_,i)=>{let d=document.createElement('div');d.className='dot'+(i===0?' active':'');dotsC.appendChild(d)})
+function typeText(el,text,container){el.innerHTML='';let words=text.split(/(\s+)/);let i=0;function nxt(){if(i<words.length){el.appendChild(document.createTextNode(words[i]));i++;setTimeout(nxt,80)}}nxt();}
+function update(){slides.forEach((s,i)=>s.classList.toggle('active',i===cur));bar.style.width=((cur+1)/slides.length*100)+'%';document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===cur));let a=slides[cur];a.scrollTop=0;let t=a.querySelector('.typewrite');if(a.dataset.text)typeText(t,a.dataset.text,a);if(cur===4){track.style.display='none'}else{track.style.display='block';updateThumb()}}
+function next(){if(cur<slides.length-1){cur++;update()}}function prev(){if(cur>0){cur--;update()}}
+function updateThumb(){let a=slides[cur];let maxScroll=a.scrollHeight-a.clientHeight;if(maxScroll<=0){thumb.style.top='0px';return}let percent=a.scrollTop/maxScroll;let trackH=track.clientHeight-thumb.clientHeight;thumb.style.top=(percent*trackH)+'px';}
+slides.forEach(s=>{s.addEventListener('scroll',updateThumb)})
+let dragging=false,startY=0,startTop=0;
+thumb.addEventListener('pointerdown',(e)=>{dragging=true;startY=e.clientY;startTop=parseFloat(thumb.style.top)||0;thumb.setPointerCapture(e.pointerId);e.preventDefault();});
+window.addEventListener('pointermove',(e)=>{if(!dragging) return;let a=slides[cur];let trackH=track.clientHeight-thumb.clientHeight;let dy=e.clientY-startY;let newTop=Math.max(0,Math.min(trackH,startTop+dy));thumb.style.top=newTop+'px';let percent=newTop/trackH;a.scrollTop=percent*(a.scrollHeight-a.clientHeight);});
+window.addEventListener('pointerup',()=>{dragging=false});
+update();
+</script>
+</body>
+  </html>
